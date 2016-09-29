@@ -1,0 +1,101 @@
+
+/*   symbolTable = new SymbolTable();
+
+     Data* a = new Data();
+     a->name = "integer";
+     a->decl = decls->Nth(0);
+
+     Data* b = new Data();
+     b->name = "float";
+     b->decl = decls->Nth(1);
+
+     Data* c = new Data();
+     c->name = "bool";
+     c->decl = decls->Nth(2);
+
+
+     Scope *x = new Scope();
+     Scope *y = new Scope();
+     Scope *z = new Scope();
+
+     x->Insert(*a);
+     // x->Insert(*b);
+     // x->Insert(*c);
+
+     x->Size();
+
+     y->Insert(*b);
+     // y->Insert(*c);
+
+     y->Size();
+
+     z->Insert(*c);
+     z->Size();
+    
+
+
+     symbolTable->Push(x);
+     symbolTable->Push(y);
+     symbolTable->Push(z);
+
+     printf("The size of symbolTable is: %d \n", ((int)(symbolTable->tableStack).size()));
+
+     Data sample = symbolTable->TableLookUp(*a);
+     if(sample.valid) {
+        printf("The Data for 'a' was valid\n");
+        if((symbolTable->TableLookUp(*b).valid)) {
+            printf("The Data for 'b' was valid\n");
+            if((symbolTable->TableLookUp(*c).valid)) {
+                printf("The Data for 'c' was valid\n");
+            }
+        }
+     }
+*/
+
+
+ /* Decl *newDecl = decls->Nth(i);
+
+          if ( ( dynamic_cast<VarDecl*> (newDecl) ) == newDecl) {
+            string identifierName = (newDecl->getIdentifier())->name; //Get the name of the varDecl
+            Data *d = new Data();
+            d->name = identifierName; //Store the name of the varDecl
+            d->decl = newDecl; //This is the varDecl itself
+
+            Data tmp = symbolTable->TableLookUp(*d); //The first time around 
+
+            if(tmp.name != d->name){
+                scope->Insert(*d);
+
+            } else {
+                //Here is where we throw the error
+                Decl* tmpDecl = decls->Nth(++i);
+                ReportError::DeclConflict(tmpDecl, newDecl);
+            }
+            //Otherwise we insert
+        }*/
+
+
+                  
+         /* else if( (dynamic_cast<FnDecl*> (newDecl) ) == newDecl) {
+            string identifierName = (newDecl->getIdentifier())->name;
+            
+            bool inList = Vector<map<string, SymbolTable>>.LookUp(identifierName)
+            if(inVector) {
+                //Check if parent already declared the variable before
+                //Throw some checks depending if its varDecl: switch, if, etc...
+            } else { //Just add it to the Vector<map<string, SymbolTable>>
+                map<string, SymbolTable> m = new map<string, SymbolTable>();
+                Vector<map<string, SymbolTable>.Add(m);
+            }
+
+            
+          }*/
+          //Create symbol for *d
+          //Insert into the list (Symbol table)
+          //d->Check
+
+          //*d->getIdentifier() and then get the name with
+          //*d->getName()
+
+      // ReportError::DeclConflict(newDecl, prevDecl);
+      //}
